@@ -36,8 +36,8 @@ Clone the repository and run one of the following to build with minification of 
   
 ## Documentation
 
-* Deployment, [see here](github.com/opulencesix/Escalate/wiki/Deployment).
-* Development, [see here](github.com/opulencesix/Escalate/wiki/Development).
+* Deployment, [see here](https://github.com/opulencesix/Escalate/wiki/Deployment).
+* Development, [see here](https://github.com/opulencesix/Escalate/wiki/Development).
 
 ## License
 
