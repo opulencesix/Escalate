@@ -24,7 +24,8 @@ Development:
 
 Clone the repository and run one of the following to build with minification of html/css/js (deployEnv=prod), or not.
 
-* _gradlew build_: To build from command line
+* Run _npm install_ from the o6 folder, to install node modules. 
+* _gradlew build_: To build from command line.
 * _gradlew cleanEclipse eclipse_: To create eclipse projects to be imported in its workspace, for development purposes
 * _npm run watch_: To track changes to javascript files and rebundle client side code while app is running from IDE debugger.
 
@@ -35,8 +36,8 @@ Clone the repository and run one of the following to build with minification of 
   
 ## Documentation
 
-* Deployment: 
-* Developers:
+* Deployment, [see here](/opulcesix/escalate/wiki/Deployment).
+* Development, [see here](/opulcesix/escalate/wiki/Development).
 
 ## License
 
