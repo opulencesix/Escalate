@@ -1,0 +1,49 @@
+[
+	{
+		"name": "O6-Kid",
+		"description": "English content targeted towards kids",
+		"profileLanguage": [
+			"all",
+			"english"
+		],
+		"profileContainingModules": [ 
+			"open"
+		],
+		"profileContentType": [
+		],
+		"profileCulture": [
+		],
+		"profileAgeGroup": [
+			"all",
+			"kid"
+		],
+		"profileDifficultyLevel": [
+		],
+		"profileTopics": [
+		]
+	},
+	{
+		"name": "O6-YouthAndAdult",
+		"description": "English content targeted towards youth and adults",
+		"profileLanguage": [
+			"all",
+			"english"
+		],
+		"profileContainingModules": [ 
+			"open"
+		],
+		"profileContentType": [
+		],
+		"profileCulture": [
+		],
+		"profileAgeGroup": [
+			"all",
+			"youth",
+			"adult"
+		],
+		"profileDifficultyLevel": [
+		],
+		"profileTopics": [
+		]
+	}
+]

@@ -1,0 +1,102 @@
+{
+	"name": {
+		"label": "Name",
+		"type": "string",
+		"defaultVal": [
+			"MyNewProfile"
+		]
+	},
+	"description": {
+		"label": "Description",
+		"type": "text",
+		"defaultVal": ""
+	},
+	"profileLanguage": {
+		"label": "Languages",
+		"type": "string",
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+				"all","english","hindi","marathi"
+			]
+		}
+	},
+	"profileContainingModules": {
+		"label": "Subscribed Modules",
+		"type": "string",
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+			]
+		}
+	},
+	"profileAudioVideoType": {
+		"label": "Audio Video Types",
+		"type": "string",
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+				"all","audio","video","audio video"
+			]
+		}
+	},
+	"profileAgeGroup": {
+		"label": "Age Groups",
+		"type": "string",
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+				"all","kid","youth","adult"
+			]
+		}
+	},
+	"profileContentType": {
+		"label": "Content Type",
+		"type": "string",
+		"hiddenField": true,
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+				"all","art","dialog","essay","humorous","novel","news","play","speech","story","thriller"
+			]
+		}
+	},
+	"profileCulture": {
+		"label": "Cultures",
+		"type": "string",
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+				"all","east asian","indian","middle eastern","western"
+			]
+		}
+	},
+	"profileDifficultyLevel": {
+		"label": "Difficult Levels",
+		"type": "string",
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+				"all","easy","normal","difficult"
+			]
+		}
+	},
+	"profileTopics": {
+		"label": "Topics",
+		"type": "string",
+		"defaultVal": [
+		],
+		"modifiers": {
+			"oneOrMore": [
+				"all","arts","environment","health","money","philosophy","politics","relationships","science","self improvement","sociology"
+			]
+		}
+	}
+}

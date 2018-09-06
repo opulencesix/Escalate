@@ -1,0 +1,61 @@
+{
+  "name": "o6",
+  "version": "0.0.1",
+  "description": "O6 Client",
+  "main": "index.js",
+  "scripts": {
+  	"build-config": "sed -e 's/PM_GW_KEY_VAL/rzp_test_ekGjEiVccpWotz/' src/main/resources/static/js/common/AppConfigTemplate.js > src/main/resources/static/js/common/AppConfig.js",
+	"build-config-prod": "sed -e 's/PM_GW_KEY_VAL/rzp_live_eHoPGAFHpxgvmg/' src/main/resources/static/js/common/AppConfigTemplate.js > src/main/resources/static/js/common/AppConfig.js",
+	  
+    "build-js": "browserify -t reactify src/main/resources/static/js/app.js -o src/main/resources/static/bundle/all.js",
+    "build-min-js": "browserify -t reactify src/main/resources/static/js/app.js | uglifyjs -c -m -o src/main/resources/static/bundle/all.js",
+    "watch-js": "nodemon -e js -w src/main/resources/static/js -x 'npm run build-js'",
+    
+    "build-sass": "node-sass src/main/resources/static/css/styles.scss src/main/resources/static/bundle/styles.generated.css ",
+    "build-min-sass": "node-sass src/main/resources/static/css/styles.scss | cleancss -o src/main/resources/static/bundle/styles.generated.css",
+    "build-css": "sleep 1; cat src/main/resources/static/css/*.css src/main/resources/static/bundle/*.generated.css > src/main/resources/static/bundle/all.css",
+    "build-min-css": "sleep 1; uglifycss src/main/resources/static/css/*.css src/main/resources/static/bundle/*.generated.css > src/main/resources/static/bundle/all.css",
+    "watch-css": "nodemon -e scss,css -w src/main/resources/static/css/ -x 'npm run build-sass && npm run build-css'",
+
+    "build": "npm run build-js && npm run build-sass && npm run build-css",
+    "build-min": "npm run build-min-js && npm run build-min-sass && npm run build-min-css",
+    "watch": "npm run watch-js & npm run watch-css",
+    "test": "jest"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "babelify": "^5.0.4",
+    "envify": "^3.4.0",
+    "jquery": "^2.1.0",
+    "metismenu": "^2.5.2",
+    "moment": "^2.10.3",
+    "bootstrap": "^3.3.7",
+    "flux": "^2.0.1",
+    "keymirror": "~0.1.0",
+    "object-assign": "^1.0.0",
+    "validator": "^3.41.2",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "clean-css": "^3.3.1",
+    "node-sass": "^3.1.2",
+    "reactify": "^1.1.1",
+    "uglifycss": "0.0.15",
+    "envify": "^3.0.0",
+    "jest-cli": "^0.4.3",
+    "uglify-js": "~2.4.15"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  },
+  "author": "aaa@xxx.com",
+  "license": "MIT"
+}

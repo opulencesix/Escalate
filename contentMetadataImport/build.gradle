@@ -1,0 +1,36 @@
+buildscript {
+    ext {
+        env = 'dev'
+        prodName = 'o6ContentMetadataImport'
+    	prodVersion = '0.0.1-SNAPSHOT'
+        
+    }
+    repositories {
+        maven { url "http://repo.spring.io/libs-release" }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
+    }
+}
+
+apply plugin: 'spring-boot'
+
+
+description = 'contentMetadataImport'
+
+jar {
+    baseName = "${prodName}"
+    version =  "${prodVersion}"
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile group: 'org.apache.poi', name: 'poi', version: '3.9'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
+    compile project(':commonData')
+    
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+

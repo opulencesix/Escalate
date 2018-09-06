@@ -1,0 +1,24 @@
+buildscript {
+    ext {
+        env = 'dev'
+        prodName = 'o6CommonData'
+    	prodVersion = '0.0.1-SNAPSHOT'
+    }
+    repositories {
+        maven { url "http://repo.spring.io/libs-release" }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
+    }
+}
+
+description = 'commonData'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb:$project.ext.springBootVersion")
+    compile("org.springframework.boot:spring-boot-starter-web:$project.ext.springBootVersion")
+    testCompile("org.springframework.boot:spring-boot-starter-test:$project.ext.springBootVersion")
+}
+
