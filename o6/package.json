@@ -4,8 +4,8 @@
   "description": "O6 Client",
   "main": "index.js",
   "scripts": {
-  	"build-config": "sed -e 's/PM_GW_KEY_VAL/rzp_test_ekGjEiVccpWotz/' src/main/resources/static/js/common/AppConfigTemplate.js > src/main/resources/static/js/common/AppConfig.js",
-	"build-config-prod": "sed -e 's/PM_GW_KEY_VAL/rzp_live_eHoPGAFHpxgvmg/' src/main/resources/static/js/common/AppConfigTemplate.js > src/main/resources/static/js/common/AppConfig.js",
+  	"build-config": "sed -e 's/PM_GW_KEY_VAL/payid/' src/main/resources/static/js/common/AppConfigTemplate.js > src/main/resources/static/js/common/AppConfig.js",
+	"build-config-prod": "sed -e 's/PM_GW_KEY_VAL/payid/' src/main/resources/static/js/common/AppConfigTemplate.js > src/main/resources/static/js/common/AppConfig.js",
 	  
     "build-js": "browserify -t reactify src/main/resources/static/js/app.js -o src/main/resources/static/bundle/all.js",
     "build-min-js": "browserify -t reactify src/main/resources/static/js/app.js | uglifyjs -c -m -o src/main/resources/static/bundle/all.js",
