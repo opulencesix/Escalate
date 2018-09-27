@@ -6,6 +6,6 @@
  * 
  */
 module.exports = {
-  RE_CAPTCHA_SITE_KEY: '6LeCKAkUAAAAAA9T3nX-dM5NhegaRDjV0xoUcUcu',
-  PM_GW_KEY: 'rzp_test_ekGjEiVccpWotz'
+  RE_CAPTCHA_SITE_KEY: '6LeCKAkUAaRDjV0xoUcUcu',
+  PM_GW_KEY: 'test_ekGjEiVtz'
 };
