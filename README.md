@@ -6,8 +6,6 @@ Escalate is a single page web application that renders videos hosted on Youtube 
 
 [This video](https://www.youtube.com/watch?v=L1pKYqutHGQ) describes features of the app while going through a use case of content pertaining to personal improvement. 
 
-See Escalate in action [here](https://escalate.opulencesix.com).
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Documentation section below has further pointers to developmer and deployment documentation.
@@ -34,12 +32,7 @@ Clone the repository and run one of the following to build with minification of 
 * Run Main application class from within eclipse if debugging
 * Else, run from command line: _java -jar o6-0.0.1-SNAPSHOT.war  --spring.config.location=<path>/application.properties_
   
-## Documentation
-
-* Deployment, [see here](/opulcesix/escalate/wiki/Deployment).
-* Development, [see here](/opulcesix/escalate/wiki/Development).
-
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
